@@ -1,0 +1,7 @@
+FROM hyperledger/fabric-peer:latest
+MAINTAINER Yanyan Hu <yanyanhu@cn.ibm.com>
+
+# Get dependencies
+RUN apt-get update && apt-get install -y \
+netcat-openbsd && \
+apt-get clean
